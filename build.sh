@@ -36,7 +36,7 @@ function zipping()
 {
 rm -rf AnyKernel
 git clone --depth=1 -b RMX2020-KSUN https://github.com/szyryjn/AnyKernel3.git AnyKernel
-cp out/arch/arm64/boot/Image.gz-dtb
+cp out/arch/arm64/boot/Image.gz AnyKernel
 cp out/arch/arm64/boot/dtbo.img AnyKernel
 cd AnyKernel
 zip -r9 "$KERNEL_NAME" *
